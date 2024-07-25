@@ -1,0 +1,22 @@
+.ui-text {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    }
+
+@media (max-width: 768px) {
+
+.ui-text {
+/*margin: 0px 0px 40px 105px;
+        font-size: 1rem;
+        width: 62%;
+                margin-left: 100px;
+
+        text-align: justify;*/
+         padding-top: 0px;
+        margin-left: 15px;
+        text-align: justify;
+        margin-right: 15px;
+
+}
+}

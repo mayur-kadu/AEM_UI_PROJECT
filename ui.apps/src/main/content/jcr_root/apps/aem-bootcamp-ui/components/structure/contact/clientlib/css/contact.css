@@ -1,0 +1,73 @@
+
+.contact_box {
+  background-color: #24d3e63e;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
+  border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;}
+
+.book_text {
+  font-size: 24px;
+  color: #252525;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.Email_text,
+.massage-bt {
+  width: calc(100% - 30px);
+  font-size: 18px;
+  color: #bebebe;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.send_bt {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.send_button {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #3fa0e0;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px; /* Add rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Add cursor pointer on hover */
+  outline: none; /* Remove outline on focus */
+}
+
+.send_button:hover {
+  background-color: #252525;
+}
+
+
+.col-md-6 .contact_taital {
+  margin-bottom: 8%;
+  margin-top: 10%;
+}
+
+
+.cookie_data_section {
+  background-color: #f1fafb;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+#formData {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  }

@@ -1,0 +1,15 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='card.content'}"></sly>
+<sly data-sly-call="${template.placeholder @ isEmpty=empty}"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"/>
+
+<div class="card-container">
+    <div class="card-image">
+        <img src="${properties.fileReference}">
+    </div>
+    <div class="card-text">
+        <h2>${properties.jcr:title}</h2>
+        <p>${properties.jcr:description @ context='html'}</p>
+<!--        <a href="${properties.linkURL}" class="sec-button">Read more</a>-->
+    </div>
+</div>

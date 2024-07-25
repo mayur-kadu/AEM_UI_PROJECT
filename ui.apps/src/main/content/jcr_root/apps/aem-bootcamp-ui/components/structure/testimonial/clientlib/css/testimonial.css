@@ -1,0 +1,84 @@
+.page {
+background-color:#fff;
+    }
+
+.doctors {
+  padding: 50px 0;
+  text-align: center;
+    margin-top: 10%;
+}
+
+.doctors .titlepage {
+  padding-bottom: 30px;
+}
+
+.doctors .testimonial-container {
+  display: flex;
+  justify-content: center;
+}
+
+.doctors .testimonials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reader {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+    text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.reader:hover {
+  background: #eae8e8;
+}
+
+.reader img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reader h3 {
+  color: #151515;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.reader p {
+  padding: 20px 0;
+  color: #0f100d;
+  line-height: 1.7em;
+}
+
+.text{
+    margin-left: 0% !important;
+  margin-right: 0% !important;
+}
+
+
+
+@media (max-width: 768px) {
+.reader {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+    margin-bottom: -50%;}
+
+    .doctors{
+		padding-left: 15px;
+            padding-right: 15px;
+
+}
+}

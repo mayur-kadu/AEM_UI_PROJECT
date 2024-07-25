@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AEM Bootcamp UI Site - All</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2024-07-18T10:08:42.586Z</entry>
+<entry key="groupId">com.aembootcampui</entry>
+<entry key="name">aem-bootcamp-ui.all</entry>
+<entry key="description">All content package for AEM Bootcamp UI Site</entry>
+<entry key="artifactId">aem-bootcamp-ui.all</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.aembootcampui</entry>
+</properties>

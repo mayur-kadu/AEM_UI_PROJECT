@@ -1,0 +1,17 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='hero.content'}" data-sly-unwrap></sly>
+<div class="hero-container">
+    <div class="banner">
+        <div class="hero-image" style="background-image: url('${properties.fileReference @ context='uri'}');">
+            <div class="text-container">
+                <div class="text">
+                    <strong class="heading">${properties.heading}</strong>
+                    <p class="heroImage-title">${properties.title || currentPage.title}</p>
+                    <p data-sly-test="${properties.buttonLabel && properties.buttonLinkTo}">
+                        <a class="hero-primary-btn" href="${properties.buttonLinkTo @ extension = 'html'}" role="button">${properties.buttonLabel}</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

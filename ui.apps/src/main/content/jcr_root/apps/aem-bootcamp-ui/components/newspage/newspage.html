@@ -1,0 +1,21 @@
+<sly data-sly-use.model="com.aembootcampui.core.models.NewsSectionModel">
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+         data-sly-call="${clientlib.css @ categories='newspage.content'}" data-sly-unwrap></sly>
+    <div class="cases">
+        <div class="news-cards">
+            <sly data-sly-list.newsItem="${model.navigations}">
+                <div class="new-news-card">
+                    <img src="${newsItem.fileReference}" alt="${newsItem.altText}" />
+                    <div class="new-news-content">
+                        <h2>${newsItem.title}</h2>
+                        <p>${newsItem.text}</p>
+                    </div>
+                    <div class="new-news-meta">
+                        <span>${newsItem.dateTime}</span>
+                        <a class="btn" href="${newsItem.logoLink @extension='html'}">Read More</a>
+                    </div>
+                </div>
+            </sly>
+        </div>
+    </div>
+</sly>

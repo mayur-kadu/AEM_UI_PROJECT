@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Bundle-Category: AEM Bootcamp UI Site
+Bundle-Description: Core bundle for AEM Bootcamp UI Site
+Bundle-ManifestVersion: 2
+Bundle-Name: AEM Bootcamp UI Site - Core
+Bundle-SymbolicName: aem-bootcamp-ui.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.aembootcampui.core.filters;version="1.0";uses:="ja
+ vax.servlet",com.aembootcampui.core.listeners;version="1.0";uses:="or
+ g.osgi.service.event",com.aembootcampui.core.models;version="1.0";use
+ s:="com.day.cq.wcm.api,javax.annotation,org.apache.sling.api.resource
+ ,org.apache.sling.models.annotations,org.apache.sling.models.annotati
+ ons.injectorspecific",com.aembootcampui.core.schedulers;version="1.0"
+ ,com.aembootcampui.core.servlets;version="1.0";uses:="javax.servlet,o
+ rg.apache.sling.api,org.apache.sling.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.aembootcampui.cor
+ e.filters;version="[1.0,2)",com.aembootcampui.core.listeners;version=
+ "[1.0,2)",com.aembootcampui.core.schedulers;version="[1.0,2)",com.aem
+ bootcampui.core.servlets;version="[1.0,2)",com.day.cq.wcm.api;version
+ ="[1.29,2)",javax.inject;version="[1.0,2)",javax.servlet;version="[3.
+ 1,4)",org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.req
+ uest;version="[2.4,3)",org.apache.sling.api.resource;version="[2.12,3
+ )",org.apache.sling.api.servlets;version="[2.3,3)",org.apache.sling.m
+ odels.annotations;version="[1.5,2)",org.apache.sling.models.annotatio
+ ns.injectorspecific;version="[1.1,2)",org.osgi.service.event;version=
+ "[1.3,2)",org.slf4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.osgi.service.event.EventHandler";uses:="org.osgi.service.
+ event"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.aembootcampui.core.filters.LoggingFilt
+ er.xml,OSGI-INF/com.aembootcampui.core.listeners.SimpleResourceListen
+ er.xml,OSGI-INF/com.aembootcampui.core.schedulers.SimpleScheduledTask
+ .xml,OSGI-INF/com.aembootcampui.core.servlets.SimpleServlet.xml
+Sling-Model-Classes: com.aembootcampui.core.models.HeaderModel,com.aem
+ bootcampui.core.models.HelloWorldModel,com.aembootcampui.core.models.
+ NavigationItemMulti,com.aembootcampui.core.models.NewsModel,com.aembo
+ otcampui.core.models.NewsSectionModel
+

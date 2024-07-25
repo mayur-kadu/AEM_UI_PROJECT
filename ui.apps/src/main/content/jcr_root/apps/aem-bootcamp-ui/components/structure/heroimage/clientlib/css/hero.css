@@ -1,0 +1,94 @@
+.hero-container {
+    position: relative;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start horizontally */
+    align-items: center; /* Center items vertically */
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text items to the left */
+    text-align: left; /* Left-align text content */
+    margin-left: 10%; /* Adjust this value as needed to move the text container left or right */
+    margin-right: 40%
+}
+
+.heading {
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.heroImage-title {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-primary-btn {
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background: rgb(49, 52, 196);
+    padding: 13px 20px;
+    border: solid;
+    border-radius: 4px;
+    border-width: thin;
+    -webkit-text-stroke: thin;
+    cursor: pointer;
+      text-decoration:none;
+
+}
+
+.hero-primary-btn:hover {
+    background: #311bad;
+    color: rgba(255, 255, 255, 0.977);
+    transition: 0.7s;
+}
+
+.text {
+    margin-left: 0;
+    margin-right: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .hero-image {
+        height: 300px;
+    }
+    .text-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+    .hero-primary-btn {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+    .hero-primary-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}

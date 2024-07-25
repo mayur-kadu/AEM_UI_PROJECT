@@ -1,0 +1,24 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='contact.content'}" data-sly-unwrap>
+    <sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+         data-sly-call="${template.placeholder @ isEmpty=empty}" />
+</sly>
+
+<div class="col-md-6">
+    <div class="contact_box">
+        <h1 class="book_text">Book Appointment</h1>
+        <form>
+            <input type="text" class="Email_text" placeholder="Name" id="nameInput" required>
+            <input type="email" class="Email_text" placeholder="Email" id="emailInput" required>
+            <textarea class="massage-bt" placeholder="Message" rows="5" id="messageInput" required></textarea>
+            <div class="send_bt">
+                <button type="submit" class="send_button">SEND</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="cookie_data_section">
+    <h2>Stored Form Data</h2>
+    <div id="formData"></div>
+</div>

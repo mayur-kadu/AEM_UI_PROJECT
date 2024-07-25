@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: AEM Bootcamp UI Site - All
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.aembootcampui:aem-bootcamp-ui.all:1.0.0-SNAPSHOT
+Content-Package-Description: All content package for AEM Bootcamp UI Sit
+ e
+Content-Package-Roots: /apps/aem-bootcamp-ui-packages,/apps/aem-bootcamp
+ -ui-vendor-packages
+

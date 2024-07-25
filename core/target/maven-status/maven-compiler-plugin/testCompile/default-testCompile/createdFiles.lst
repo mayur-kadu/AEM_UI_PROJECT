@@ -1,0 +1,5 @@
+com\aembootcampui\core\servlets\SimpleServletTest.class
+com\aembootcampui\core\models\HelloWorldModelTest.class
+com\aembootcampui\core\listeners\SimpleResourceListenerTest.class
+com\aembootcampui\core\filters\LoggingFilterTest.class
+com\aembootcampui\core\schedulers\SimpleScheduledTaskTest.class

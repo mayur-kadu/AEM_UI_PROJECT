@@ -1,0 +1,42 @@
+<!-- Header Component Start -->
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='header.content'}" data-sly-unwrap></sly>
+
+<sly data-sly-use.header="com.aembootcampui.core.models.HeaderModel"
+     data-sly-test.empty="${!header.fileReference}"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=empty}" />
+
+<sly data-sly-test="${!empty}">
+    <nav id="navbar">
+        <div class="header-container">
+            <div class="logo cmp-image--logo" style="display: inline-block;">
+                <a class="cmp-image" href="${header.logoLink @extension='html'}">
+                    <img src="${header.fileReference}" alt="${header.altText}" class="cmp-image__image">
+                </a>
+            </div>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger">
+                <span class="hamburger-icon"></span>
+            </label>
+
+            <ul id="nav-links">
+                <sly data-sly-repeat.nav="${header.headerNavigationItemsList}">
+                    <li>
+                        <a href="${nav.path @extension='html'}" class="${nav.path == currentPage.path ? 'current' : ''}">
+                            ${nav.title}
+                        </a>
+                        <div class="childpage" data-sly-test.subNav="${nav.listChildren}"></div>
+                        <ul data-sly-test="${subNav}" class="dropdown-list">
+                            <li data-sly-repeat.item="${subNav}">
+                                <a href="${item.path @extension='html'}">${item.title}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </sly>
+            </ul>
+        </div>
+    </nav>
+</sly>
+<!-- Header Component End -->
